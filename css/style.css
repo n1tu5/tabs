@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+section{
+    padding: 0 10%;
+}
+section div ul:first-child{
+    display: flex;
+    background-color: rgb(226, 226, 226);
+}
+section div ul:first-child li{
+    padding: 20px;
+    cursor: pointer;
+}
+section div ul:first-child li.active, section div ul:first-child li:hover{
+    background-color: gray;
+}
+section div ul:last-child li{
+    display: none;
+    border: 1px solid rgb(219, 219, 219);
+}
+section div ul:last-child li.active{
+    display: block;
+    padding: 10px;
+}
+section.second div{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+section.second div ul:first-child{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(232, 232, 232);
+}
+section.second div ul:first-child li{
+   padding: 20px;
+   cursor: pointer; 
+}
+section div ul:last-child li{
+    height: 100%;
+}
